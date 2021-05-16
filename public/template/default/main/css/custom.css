@@ -1,0 +1,753 @@
+body {
+  font-family: "Helvetica Neue", Roboto, "Source Sans Pro", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+table.table.btn-table td {
+  vertical-align: middle;
+}
+
+.my-text-primary {
+  color: #5fcbc4;
+}
+
+.my-menu-link.active {
+  color: #5fcbc4;
+}
+
+.loader_skeleton {
+  height: 125vh;
+  overflow-y: scroll;
+  z-index: 9999999;
+}
+
+.typography_section {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#btn-view-more {
+  cursor: pointer;
+}
+
+header.my-header {
+  width: 100%;
+}
+header.my-header .top-header {
+  background-color: transparent;
+}
+header.my-header .top-header .header-dropdown > li {
+  padding-top: 40px;
+  padding-right: 0;
+}
+header.my-header .top-header .header-dropdown > li.mobile-account:before {
+  display: none;
+}
+header.my-header
+  .top-header
+  .header-dropdown
+  .onhover-dropdown
+  .onhover-show-div {
+  top: 80px;
+}
+header.my-header .onhover-div .show-div {
+  top: 80px;
+}
+header.my-header.container-med .container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header.sticky {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(153, 153, 153, 0.62);
+  box-shadow: 0px 0px 5px 0px rgba(153, 153, 153, 0.62);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: smoothScroll 1s forwards;
+  animation: smoothScroll 1s forwards;
+  background-color: white;
+  width: 100%;
+}
+
+/* @-webkit-keyframes smoothScroll {
+    0% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes smoothScroll {
+    0% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+} */
+
+.rating i:last-child {
+  /* color: #ffa200; */
+  /* color: unset!important; */
+}
+
+.product-box .product-detail a h6,
+.product-box .product-detail a h4 {
+  min-height: 30px;
+}
+
+.home-slider .home,
+.center-slider .home {
+  /* height: 88.6vh; */
+  height: 39vw;
+}
+
+.j-box .product-box .product-detail {
+  padding: 10px;
+  background-color: unset;
+}
+
+.no-slider.five-product .product-box:nth-last-child(-n + 5) {
+  margin: 0 15px 30px;
+}
+
+.no-slider .product-box:nth-last-child(-n + 4) {
+  margin: 0 15px 30px;
+}
+
+.product-pagination .pagination .page-item.active a {
+  background-color: var(--theme-deafult);
+  color: #ffffff;
+  border-color: var(--theme-deafult);
+  /* border-color: #dddddd; */
+}
+
+.cart-section tfoot tr td:first-child,
+.wishlist-section tfoot tr td:first-child {
+  width: 79%; /* kk */
+}
+
+.blog-page .blog-media .blog-right {
+  justify-content: unset;
+}
+
+.ckeditor-content img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.mark,
+mark {
+  padding: 0;
+  background-color: yellow;
+}
+
+.collection-product-wrapper
+  .product-top-filter
+  .product-filter-content
+  .collection-view {
+  border-left: 1px solid #dddddd;
+}
+
+.collection-product-wrapper
+  .product-top-filter
+  .product-filter-content
+  .product-page-filter {
+  border-right: 1px solid #dddddd;
+}
+
+.product-wrapper-grid.list-view .product-detail a h6 {
+  min-height: unset;
+}
+
+.product-wrapper-grid.list-view .product-box .img-wrapper {
+  min-width: 25%;
+}
+
+.my-layout-view.active {
+  background-color: var(--theme-deafult);
+  /* padding: 2px; */
+}
+
+@media (max-width: 420px) {
+  .no-slider.five-product .product-box:nth-last-child(-n + 5) {
+    margin: 0 10px 20px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .no-slider.five-product .product-box:nth-last-child(-n + 2) {
+    margin: 0 15px 30px !important;
+  }
+
+  .dashboard-left {
+    z-index: 999;
+  }
+
+  .collection-filter {
+    z-index: 999;
+  }
+
+  .collection-product-wrapper
+    .product-top-filter
+    .product-filter-content
+    .product-page-per-view,
+  .collection-product-wrapper
+    .product-top-filter
+    .product-filter-content
+    .product-page-filter {
+    width: 100%;
+  }
+
+  .product-filter-content > div {
+    border: 1px solid #dddddd;
+  }
+}
+
+@media (max-width: 577px) {
+  .my-header .top-header .header-dropdown .mobile-wishlist img,
+  .my-header .top-header .header-dropdown .mobile-account img {
+    -webkit-filter: brightness(5);
+    filter: brightness(5);
+  }
+  .my-header .main-menu .brand-logo {
+    margin: 0;
+    left: 0;
+    -webkit-transform: unset;
+    transform: unset;
+  }
+
+  header.my-header
+    .top-header
+    .header-dropdown
+    .mobile-account
+    .onhover-show-div,
+  header.my-header
+    .top-header
+    .header-dropdown
+    .mobile-wishlist
+    .onhover-show-div {
+    top: unset;
+    bottom: 42px;
+    right: 0;
+  }
+
+  .main-menu .menu-right .icon-nav .mobile-search {
+    right: 66%;
+  }
+
+  .top-header .header-dropdown .mobile-account,
+  .top-header .header-dropdown .mobile-wishlist {
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pixelstrap ul {
+    position: absolute;
+    width: 20em !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sm-horizontal {
+    overflow: auto;
+  }
+
+  .product-wrapper-grid.list-view .product-box .img-wrapper {
+    min-width: 35%;
+  }
+}
+
+.img-wrapper .front img {
+  max-height: 229px !important;
+}
+
+img {
+  max-width: 100% !important;
+  display: inline-block !important;
+}
+
+.xuongdong {
+  margin-top: 10px;
+}
+
+.card-header {
+  /* margin-bottom: 20px; co chinh sua */
+}
+
+.fa-spinner {
+  animation: fa-spinner 1.5s linear infinite;
+  -moz-animation: fa-spinner 1.5s linear infinite;
+  -ms-animation: fa-spinner 1.5s linear infinite;
+  -o-animation: fa-spinner 1.5s linear infinite;
+  -webkit-animation: fa-spinner 1.5s linear infinite;
+}
+@-webkit-keyframes fa-spinner {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* SLIDER */
+.slider {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.slider h1 {
+  background: rgb(248, 3, 3);
+  color: #3498db;
+  font-size: 36px;
+  line-height: 70px;
+  margin: 5px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+.slider img {
+  border: 1px solid #a8a8a8;
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 50px;
+  margin: auto;
+  padding: 4%;
+  position: relative;
+  text-align: center;
+  height: 50px !important;
+}
+
+#exzoom {
+  width: 250px;
+}
+.hidden {
+  display: none;
+}
+/* .slide-1.new{
+  position: fixed;
+  top: 100px;
+} */
+
+.rating-stars {
+  position: relative;
+  vertical-align: baseline;
+  color: #b9b9b9;
+  line-height: 10px;
+  float: left;
+  display: flex;
+  /* display: block !important; */
+  /* margin-right: 152px; */
+  margin-bottom: 10px;
+}
+
+.filled-stars {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  overflow: hidden;
+  color: var(--primary-color);
+}
+.filled-stars::before,
+.grey-stars::before {
+  content: "\2605 \2605 \2605 \2605 \2605";
+  font-size: 19px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.product-box.wight_bottom {
+  height: 307px;
+  width: 267px;
+  margin-bottom: 15px;
+}
+.my-home-slider {
+  margin-top: 108px !important;
+}
+
+.breadcrumb-section {
+  margin-top: -13px !important;
+}
+
+.breadcrumb.margin a:first-child {
+  margin-left: 58px;
+}
+/*===================================================breakcrumb ================================================*/
+
+/* Menu General Styles */
+.menuBackground {
+  background: #08a3db;
+  text-align: center; /* or change the value to left to align left*/
+}
+.dropDownMenu a {
+  color: #fff;
+}
+.dropDownMenu,
+.dropDownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropDownMenu li {
+  position: relative;
+}
+.dropDownMenu a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.dropDownMenu a:hover {
+  background: #000;
+}
+
+/* Level 1 Drop Down Menu */
+.dropDownMenu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px; /* solve the 4 pixels spacing between list-items */
+}
+.dropDownMenu > li:first-child {
+  margin-left: 0;
+}
+.dropDownMenu > li > a {
+}
+.dropDownMenu > li > a:hover {
+}
+
+/* Level 2 */
+.dropDownMenu > li > ul {
+  text-align: left;
+  width: auto; /* change auto value with 200px if you want a bigger menu */
+  display: none;
+  background: #5dbb04;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999999; /* if you have YouTube iframes, is good to have a bigger z-index so the video can appear above the video */
+}
+.dropDownMenu > li:hover > ul {
+  display: block;
+}
+.dropDownMenu ul li a {
+}
+.dropDownMenu ul li a:hover {
+}
+
+/* Level 3 */
+.dropDownMenu > li > ul > li > ul {
+  text-align: left;
+  display: none;
+  background: #e7b400;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 9999999;
+}
+.dropDownMenu > li > ul > li:hover > ul {
+  display: block;
+}
+.dropDownMenu ul ul li {
+}
+.dropDownMenu ul ul li a {
+}
+.dropDownMenu ul ul li a:hover {
+}
+
+li.active {
+  /* background-color:#000; */
+}
+
+div.breadcrumb {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5fcbc4;
+  margin-top: 108px;
+}
+
+span.margin {
+  margin: 0 5px;
+}
+/*===================================================breakcrumb ================================================*/
+
+/*================================= TIN TUC /*=================================*/
+
+.play-icons {
+  background: green;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.rowx {
+  /* width: 100%; */
+  padding: 0px 0px 20px 0px;
+  float: left;
+  margin: 30px 81px;
+}
+.rowx_content {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  border-top: 0px;
+}
+.rowx_content .title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #f7f7f7;
+  margin: 0px auto 0px auto;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  z-index: 1;
+}
+._2item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.thongtinxemoi {
+  display: inline-block;
+  padding: 13px 29px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  border: 2px solid #5fcbc4;
+  background-image: linear-gradient(30deg, #5fcbc4 50%, transparent 50%);
+  background-size: 850px;
+  background-repeat: no-repeat;
+  background-position: 0;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.btn {
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px !important;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.clear {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.saovan {
+  width: 360px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-top: 17px;
+  
+}
+.saovan1 {
+  float: left;
+  width: 19%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.saovan img {
+  width: 100%;
+  height: 225px;
+}
+.saovan .tieude {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 3px;
+  
+}
+/* a:link {
+  LINE-HEIGHT: 16px;
+  TEXT-DECORATION: none;
+  color: #000;
+  transition: color 0.2s;
+} */
+/*================================= END TIN TUC /*=================================*/
+
+/*/*================================= thong ke/*================================= */
+.group_tin {
+  border-radius: 4px;
+  background: #fff;
+}
+.group_tin_tieude {
+  padding: 5px 5px 5px 10px;
+  color: rgb(0, 0, 0);
+  border: 1px solid gray;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.group_tin_noidung {
+  background-color: #fff;
+  border-top: 0px;
+  margin: 0px 0px;
+  border: 1px solid #d6d6d6;
+  border-top: 0px;
+}
+.group_thongke {
+  padding: 10px;
+  color: #000;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.group_thongke .row_thongke {
+  clear: both;
+  box-shadow: 0px 0.5px 0.5px #ccc;
+  margin-bottom: 3px;
+}
+.row_thongke .label {
+  float: left;
+  color: #000;
+  font-size: 12px;
+  line-height: 25px;
+  clear: both;
+}
+.group_thongke li.li1 i {
+  color: #57a2fe;
+}
+.row_thongke .row_data_online {
+  font-weight: bold;
+}
+
+.row_thongke .row_data_online {
+  line-height: 29px;
+  width: 220px;
+}
+
+/*/*================================= end thong ke/*================================= */
+.tat-ovr {
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* CUSTOM TRANG NEWS */
+
+.itemnoidung {
+  border-bottom: 1px dotted #ccc;
+  clear: both;
+  margin-top: 35px;
+  padding-bottom: 10px;
+}
+
+.itemnoidung .img {
+  float: left;
+  width: 20%;
+  border: 1px solid #efefef;
+  padding: 5px 5px 0px 5px;
+  margin-right: 10px;
+}
+
+.itemnoidung .img img {
+  max-width: 100%;
+}
+
+.itemnoidung p.tieude {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.itemnoidung .xemchitiet1 {
+  float: right;
+  margin-top: 40px;
+}
+.itemnoidung .xemchitiet1 a {
+  background-color: #157a7f;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.xemchitiet1 a {
+  border: 1px solid #eaeaea;
+  margin: 2px;
+  padding: 4px 20px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+.clear {
+  clear: both;
+}
+
+/* END CUSTOM TRANG NEWS */
+
+.saovan .xemchitiet a {
+  background-color: #5fcbc4;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.xemchitiet {
+  /* float: right; */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  
+}
+
+.saovan {
+  width: 360px;
+  height: 390px;
+  position: relative;
+}
+.kk123{
+  /* margin-top: 40px; */
+
+}
+
+.kk11 a{
+  font-size:20px !important;
+}
+
+.kk001 {
+    width: 705px;
+    margin-left: 200px;
+    margin-top: 42px;
+}

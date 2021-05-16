@@ -1,0 +1,28 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+
+
+RewriteRule		index.html 			index.php?module=frontend&controller=index&action=index
+RewriteRule		moto.html 		    index.php?module=frontend&controller=moto&action=index
+RewriteRule		news.html 		    index.php?module=frontend&controller=news&action=index
+RewriteRule		category.html 		index.php?module=frontend&controller=category&action=index
+
+RewriteRule		register.html 		index.php?module=frontend&controller=user&action=register
+RewriteRule		login.html 			index.php?module=frontend&controller=user&action=login
+RewriteRule		logout.html 		index.php?module=frontend&controller=index&action=logout
+
+RewriteRule		cart.html 			index.php?module=frontend&controller=user&action=cart
+RewriteRule		my-account.html 	index.php?module=frontend&controller=user&action=account
+RewriteRule		history.html 		index.php?module=frontend&controller=user&action=history
+RewriteRule		change-password.html 		            index.php?module=frontend&controller=user&action=changePassword
+
+
+
+
+RewriteRule		([A-Za-z0-9_-]+)-([0-9]+)\.html 		index.php?module=frontend&controller=moto&action=index&category_id=$2
+RewriteRule		([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)-([0-9]+)-([0-9]+)\.html 		index.php?module=frontend&controller=moto&action=detail&category_id=$3&moto_id=$4
