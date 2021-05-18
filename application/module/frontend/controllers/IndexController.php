@@ -22,6 +22,7 @@ class IndexController extends Controller
 		$this->_view->specialCategoryList = $this->_model->listItem($this->_arrParam, ['task' => 'specialCategoryList']);
 		$this->_view->categoryInMotos     = $this->_model->listItem($this->_arrParam, ['task' => 'categoryInMotos']);
 		$this->_view->newMotoInfos        = $this->_model->listItem($this->_arrParam, ['task' => 'newMotoInfos']);
+		$this->_view->videos               = $this->_model->listItem($this->_arrParam, ['task' => 'videos']);
 			
 		$this->_view->render($this->_arrParam['controller'] . '/index');
 	}

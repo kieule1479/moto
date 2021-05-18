@@ -25,6 +25,9 @@ $linkMotoForm = URL::createLink('backend', 'moto', 'form');
 $linkNewsList = URL::createLink('backend', 'news', 'index');
 $linkNewsForm = URL::createLink('backend', 'news', 'form');
 
+$linkVideoList = URL::createLink('backend', 'video', 'index');
+$linkVideoForm = URL::createLink('backend', 'video', 'form');
+
 $linkCartList = URL::createLink('backend', 'cart', 'index');
 
 
@@ -63,6 +66,11 @@ $arrMenuSidebar = [
     'news'      => ['data-active' => 'news',        'icon' => 'newspaper',           'name' => 'News',      'link' => '#', 'child' => [
         ['data-active' => 'index',  'icon'   => 'list-ul',  'name' => 'List',   'link' => $linkNewsList],
         ['data-active' => 'form',   'icon'  => 'edit',      'name' => 'Form',   'link' => $linkNewsForm]
+    ]],
+
+    'video'      => ['data-active' => 'video',        'icon' => 'video',           'name' => 'Video',      'link' => '#', 'child' => [
+        ['data-active' => 'index',  'icon'   => 'list-ul',  'name' => 'List',   'link' => $linkVideoList],
+        ['data-active' => 'form',   'icon'  => 'edit',      'name' => 'Form',   'link' => $linkVideoForm]
     ]],
     
     'cart' => ['data-active' => 'cart', 'icon' => 'cart-plus', 'name' => 'Cart', 'link' => $linkCartList],

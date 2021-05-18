@@ -58,6 +58,7 @@ $arrCategory  = $model->fetchAll($query);
 $arrMenu[]    = ['controller' => 'index', 'action' => 'index', 'name' => 'Trang chủ'];
 $arrMenu[]    = ['controller' => 'moto', 'action' => 'index', 'name' => 'Moto'];
 $arrMenu[]    = ['controller' => 'news', 'action' => 'index', 'name' => 'Tin tức'];
+$arrMenu[]    = ['controller' => 'video', 'action' => 'index', 'name' => 'Video'];
 $arrMenu[]    = ['controller' => 'category', 'action' => 'index', 'name' => 'Danh mục', 'child' => $arrCategory];
 
 
@@ -101,12 +102,15 @@ if (isset($_GET['moto_id'])) {
 if (isset($_GET['news_id'])) {
 	$id =  $_GET['news_id'];
 }
+if (isset($_GET['video_id'])) {
+	$id =  $_GET['video_id'];
+}
 
 
 
 
 $lengthBreadCrumb = 1; //count($currentBreadCrumb);
-if (isset($_GET['category_id']) || isset($_GET['moto_id']) || isset($_GET['news_id'])) {
+if (isset($_GET['category_id']) || isset($_GET['moto_id']) || isset($_GET['news_id']) || isset($_GET['video_id'])) {
 	$lengthBreadCrumb = 2;
 }
 

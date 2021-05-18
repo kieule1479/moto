@@ -106,6 +106,13 @@ class IndexModel extends Model
 			$query[] = "WHERE `status` = 1";
 			$query[] = "ORDER BY `ordering` ASC";
 		}
+		if ($option['task'] == 'videos') {
+			$query[] = "SELECT `id` ,`name`,`picture`";
+			$query[] = "FROM `video`";
+			$query[] = "WHERE `status` = 1";
+			$query[] = "ORDER BY `id` DESC";
+			$query[] = "LIMIT 0, 4";
+		}
 
 		if ($option['task'] == 'specialMoto') {
 			$query[] = "SELECT `id` ,`name`,`picture`,`price`,`sale_off`,`special`";

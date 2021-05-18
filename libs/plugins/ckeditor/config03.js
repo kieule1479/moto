@@ -30,6 +30,8 @@ CKEDITOR.editorConfig = function (config) {
   //   { name: "tools", items: ["Maximize","ShowBlocks","-","About"] },
 
   // ];
+  config.extraPlugins = "youtube";
+  
   config.toolbar = 'Admin';
   config.removePlugins = 'about,forms';//xoa cac plugins( xem ten plugin trong thu muc plugins)
 

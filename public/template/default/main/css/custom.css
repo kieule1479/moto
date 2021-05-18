@@ -530,7 +530,7 @@ span.margin {
 ._2item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   flex-wrap: wrap;
 }
 .thongtinxemoi {
@@ -572,8 +572,8 @@ span.margin {
   margin-bottom: 10px;
   margin-top: 5px;
   margin-top: 17px;
-  
 }
+
 .saovan1 {
   float: left;
   width: 19%;
@@ -588,8 +588,25 @@ span.margin {
   font-size: 14px;
   font-weight: bold;
   padding-top: 3px;
-  
 }
+
+.saovan_4 {
+  width: 260px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-top: 17px;
+}
+
+.saovan_4 img {
+  width: 100%;
+  height: 150px;
+}
+.saovan_4 .tieude {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
 /* a:link {
   LINE-HEIGHT: 16px;
   TEXT-DECORATION: none;
@@ -729,7 +746,6 @@ ul {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  
 }
 
 .saovan {
@@ -737,17 +753,46 @@ ul {
   height: 390px;
   position: relative;
 }
-.kk123{
-  /* margin-top: 40px; */
 
+.saovan_4 {
+  width: 266px;
+  height: 170px;
+  position: relative;
+}
+.kk123 {
+  /* margin-top: 40px; */
 }
 
-.kk11 a{
-  font-size:20px !important;
+.kk11 a {
+  font-size: 20px !important;
 }
 
 .kk001 {
-    width: 705px;
-    margin-left: 200px;
-    margin-top: 42px;
+  width: 705px;
+  margin-left: 200px;
+  margin-top: 42px;
+}
+
+.text-center.kk_m4 {
+    margin-top: 50px;
+    /* text-align: center; */
+    margin-left: 45%;
+    display: inline-block;
+}
+.kk_poisan{
+  position: relative;
+}
+.kk_color{
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    color: #ffffffc2;
+    font-size: 40px;
+
+}
+.kk_mg{
+  height:200px;
+}
+.kk_w{
+  width: 187px;
 }

@@ -39,6 +39,7 @@ define('TBL_USER', 'user');
 define('TBL_PRIVELEGE', 'privilege');   
 define('TBL_CATEGORY', 'category');
 define('TBL_NEWS', 'news');
+define('TBL_VIDEO', 'video');
 define('TBL_moto', 'moto');
 define('TBL_CART', 'cart');
 define('TBL_SLIDER', 'slider');

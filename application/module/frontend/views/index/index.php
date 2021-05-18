@@ -119,6 +119,29 @@ foreach ($this->newMotoInfos as $newMotoInfo) {
 }
 //======== END NEWS =========
 
+//======== VIDEO =========
+foreach ($this->videos as $video) {
+
+    $id   = $video['id'];
+    $name = $video['name'];
+    $img  = $video['picture'];
+    $link = URL::createLink('frontend', 'video', 'detail', ['video_id' => $id]);
+
+    $xhtmlVideos .= '
+                    <div class="itemnoidungs saovan_4 kk_mg">
+                        <div class="img kk_poisan">
+                            <a href="' . $link . '" title="' . $name . '"><img " src="' . URL_PUBLIC . 'files/video/' . $img . '" alt="' . $name . '"></a>
+                            <i class="kk_color fas fa-play-circle"></i> 
+                        </div>
+                        <div class="kk_border">
+                            <br>
+                             <p class="tieude"><a href="' . $link . '" title="' . $name . '">' . $name . '</a></p>
+                         </div>
+                   </div>
+                 ';
+}
+//======== END NEWS =========
+
 
 //!================================================================================================================
 ?>
@@ -196,6 +219,30 @@ foreach ($this->newMotoInfos as $newMotoInfo) {
         </div>
     </div>
 </div><!-- END TIN TUC -->
+
+
+<!-- VIDEO -->
+<div class="row">
+    <div class="container">
+        <div style="border-bottom:3px solid #5fcbc4" class="title">
+            <div class="titleitem _bgcolormain">
+                <a title="Video" class="thongtinxemoi" href="#">VIDEO</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="chia2" style="width:100%;float:left;">
+            <div class="_2item">
+                <?php echo $xhtmlVideos ?>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+        <div class="text-center kk_m4">
+            <a href="/moto/index.php?module=frontend&controller=video&action=index" class="btn btn-solid">Xem thêm </a>
+        </div>
+    </div>
+
+</div><!-- END VIDEO -->
 
 
 
