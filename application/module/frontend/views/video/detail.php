@@ -45,7 +45,7 @@ foreach ($this->videosRelate as $videoRelate) {
                     <div class="itemnoidungs saovan_4 kk_mg kk_w">
                         <div class="img kk_poisan">
                             <a href="' . $link . '" title="' . $name . '"><img " src="' . URL_PUBLIC . 'files/video/' . $img . '" alt="' . $name . '"></a>
-                            <i class="kk_color fas fa-play-circle"></i> 
+                            <a href="' . $link . '" class="kk_color fas fa-play-circle"></a> 
                         </div>
                         <div class="kk_border">
                             <br>
